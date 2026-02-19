@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.noir-container {
+  @apply mx-auto w-full max-w-7xl px-4 md:px-6;
+}
+
+.noir-panel {
+  @apply border border-hairline border-border bg-card/70 shadow-noir backdrop-blur;
+}
+
+.noir-input {
+  @apply w-full border border-hairline border-border bg-black px-3 py-2 text-sm text-foreground outline-none transition-colors duration-300 ease-luxe focus:border-foreground;
+}
+
+.noir-label {
+  @apply text-xs uppercase tracking-[0.24em] text-muted;
+}
